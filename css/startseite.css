@@ -1,0 +1,27 @@
+
+.container_datum {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* oder was zur Bildgröße passt */
+    height: 100%;
+
+}
+
+.boobie {
+    position: absolute;
+    width: 60%;
+    z-index: -1;
+}
+
+.datum_heute {
+
+}
+
+
+.container_medikamente {
+    display: flex;
+    justify-content: center;
+    max-width: 100%; /* oder was zur Bildgröße passt */
+    margin-top: 15%;
+}

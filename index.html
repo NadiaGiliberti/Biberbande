@@ -6,12 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Applikation Beavertime</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/startseite.css">
+    <link rel="icon" href="images/icon.png" type="image/png">
+
 </head>
 
 <body>
     <header>
 
-        <img src="images/logo.png" alt="beavertime">
+        <a href="index.html"><img src="images/logo.png" alt="beavertime"></a>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="tabletten.html">Tabletten</a>
+        </div>
 
     </header>
 
@@ -19,12 +26,14 @@
 
         <body>
 
-            <div>
-                <img src="images/boobie.png" alt="farbverlauf">
-                <div class="datum">
+            <div class="container_datum">
+                <img src="images/boobie.png" alt="farbverlauf" class="boobie">
+
+                <div class="datum_heute">
                     <h1 id="heute_tag">30</h1>
-                    <h2 id="monat_monat">APRIL</h2>
+                    <h2 id="heute_monat">APRIL</h2>
                 </div>
+                
             </div>
 
             <div class="container_medikamente">
@@ -52,7 +61,14 @@
     </main>
 
     <footer>
-
+        <div>
+            <div>
+                <a href="index.html"><img src="images/home_rot.png" alt="iconHome"></a>
+            </div>
+            <div>
+                <a href="tabletten.html"><img src="images/pille_rosa.png" alt="iconPille"></a>
+            </div>
+        </div>
     </footer>
     <script src="js/script.js"></script>
 </body>
