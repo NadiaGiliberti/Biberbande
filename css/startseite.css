@@ -1,27 +1,41 @@
-
 .container_datum {
+   font-family: 'Work Sans', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%; /* oder was zur Bildgröße passt */
+    width: 100%;
     height: 100%;
+    margin-top: 20vw;
+    color: #F8D6E7;
 
 }
+
+#tag {
+    font-size: 40vw;
+    font-weight: 500;
+    line-height: 0.8;
+}
+
+#monat {
+    font-size: 10vw;
+    text-transform: uppercase;
+}
+
+
 
 .boobie {
     position: absolute;
-    width: 60%;
+    width: 95%;
     z-index: -1;
 }
-
-.datum_heute {
-
+.container_medikamente {
+    justify-content: center;
+    max-width: 100%;
+    /* oder was zur Bildgröße passt */
+    margin-top: 15%;
 }
 
 
-.container_medikamente {
-    display: flex;
-    justify-content: center;
-    max-width: 100%; /* oder was zur Bildgröße passt */
-    margin-top: 15%;
+.datum_heute {
+    text-align: center;
 }

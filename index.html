@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/startseite.css">
     <link rel="icon" href="images/icon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
 </head>
 
@@ -30,10 +35,13 @@
                 <img src="images/boobie.png" alt="farbverlauf" class="boobie">
 
                 <div class="datum_heute">
-                    <h1 id="heute_tag">30</h1>
-                    <h2 id="heute_monat">APRIL</h2>
+                    <div class="datum-wrapper">
+                        <div id="tag"></div>
+                        <div id="monat"></div>
+                        
+                    </div>
+
                 </div>
-                
             </div>
 
             <div class="container_medikamente">
@@ -53,8 +61,10 @@
                     </div>
 
                 </div>
-
             </div>
+
+
+
 
         </body>
 
