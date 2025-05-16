@@ -1,5 +1,5 @@
 .container_datum {
-   font-family: 'Work Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,6 +19,7 @@
 #monat {
     font-size: 10vw;
     text-transform: uppercase;
+
 }
 
 
@@ -28,14 +29,46 @@
     width: 95%;
     z-index: -1;
 }
+
 .container_medikamente {
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
     max-width: 100%;
-    /* oder was zur Bildgröße passt */
-    margin-top: 15%;
+    margin-top:25vw;
+
+
 }
+
 
 
 .datum_heute {
     text-align: center;
+}
+
+#uhrzeit-feld {
+    background-color: #FE7593;
+    /* rosa Hintergrund */
+    color: black;
+    /* schwarze Schrift */
+    font-size: 15vw;
+    /* große Uhrzeit */
+    border-radius: 8vw;
+    /* voll abgerundet (oval) */
+    font-family: sans-serif;
+    text-align: center;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    padding: 1vw;
+}
+
+#medikamentzwei {
+    margin-top: 6vw;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#medikamenteins {
+    display: flex;
+    justify-content: space-between;
 }
