@@ -34,7 +34,7 @@
     display: flex;
     flex-direction: column;
     max-width: 100%;
-    margin-top:25vw;
+    margin-top: 25vw;
 
 
 }
@@ -71,4 +71,28 @@
 #medikamenteins {
     display: flex;
     justify-content: space-between;
+}
+
+
+
+
+.container-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    /* maximale Breite, z. B. für Desktop */
+    /* zentriert den Inhalt */
+    padding: 1rem;
+    /* Abstand links/rechts */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+@media (min-width: 1024px) {
+    .container-wrapper {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
 }

@@ -14,6 +14,15 @@
     font-style: normal;
 } */
 
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden; /* Verhindert horizontales Scrollen */
+  max-width: 100vw;    /* Maximal so breit wie das Viewport */
+}
+
 
 * {
     margin: 0;
