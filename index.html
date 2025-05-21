@@ -11,12 +11,13 @@
 </head>
 
 <body>
-    <header>
-
-        <a href="index.html"><img src="images/logo.png" alt="beavertime"></a>
+    <header class="container_header">
+        <div class="container_logo">
+            <a href="index.html"><img src="images/logo.png" alt="beavertime" class="logo"></a>
+        </div>
         <nav class="container_navigation">
-            <a href="index.html">Home</a>
-            <a href="tabletten.html">Tabletten</a>
+            <a href="index.html" class="navigation">HOME</a>
+            <a href="tabletten.html" class="navigation">TABLETTEN</a>
         </nav>
     </header>
 
@@ -54,16 +55,20 @@
     </main>
 
     <footer>
-        <div>
-            <div>
-                <a href="index.html"><img src="images/home_rot.png" alt="iconHome"></a>
-            </div>
-            <div>
-                <a href="tabletten.html"><img src="images/pille_rosa.png" alt="iconPille"></a>
+        <div class="footer-toggle">
+            <div class="toggle-switch" id="pageToggle">
+                <div class="toggle-option home-option">
+                    <img src="images/home_rot.png" alt="Home">
+                </div>
+                <div class="toggle-option pill-option">
+                    <img src="images/pille_rosa.png" alt="Pille">
+                </div>
+                <div class="toggle-slider" id="slider"></div>
             </div>
         </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/startseite.js"></script>
 </body>
 
 </html>

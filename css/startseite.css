@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-top: 10%;
 }
 
 #boobie {
@@ -64,11 +65,16 @@
 }
 
 
-@media (min-width: 1024px) {
-    .container-wrapper {
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: space-between;
-    }
+/*** kleiner PC / Tablet ***/
+@media screen and (max-width: 768px) and (min-width: 577px) {
+
+
+}
+
+/*** Handy  ***/
+@media screen and (max-width: 576px) {
+
+
+
 
 }
