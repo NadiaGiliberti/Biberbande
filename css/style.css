@@ -50,7 +50,7 @@
     h1 {
         font-family: 'workSans';
         font-weight: 500;
-        font-size: 40vw;
+        font-size: 20vw;
         text-transform: uppercase;
         color: #F8D6E7;
         line-height: 0.8;
@@ -59,7 +59,7 @@
     h2 {
         font-family: 'workSans';
         font-weight: 400;
-        font-size: 10vw;
+        font-size: 5vw;
         text-transform: uppercase;
         color: #F8D6E7;
     }
@@ -67,7 +67,7 @@
     h3 {
         font-family: 'workSans';
         font-weight: 900;
-        font-size: 6vw;
+        font-size: 3vw;
         text-transform: uppercase;
         color: #EB3D01;
     }
@@ -75,7 +75,7 @@
     p {
         font-family: 'workSans';
         font-weight: 400;
-        font-size: 5vw;
+        font-size: 2.5vw;
         text-transform: uppercase;
         color: #EB3D01;
     }
@@ -83,7 +83,7 @@
     a {
         font-family: 'workSans';
         font-weight: 400;
-        font-size: 3vw;
+        font-size: 1.5vw;
         text-transform: uppercase;
         color: #EB3D01;
         text-decoration: none;
@@ -166,7 +166,36 @@
 
 
     /*** kleiner PC / Tablet ***/
-    @media screen and (max-width: 768px) and (min-width: 577px) {}
+    @media screen and (max-width: 768px) and (min-width: 577px) {
+
+
+    }
 
     /*** Handy  ***/
-    @media screen and (max-width: 576px) {}
+    @media screen and (max-width: 576px) {
+
+        h1 {
+            font-size: 40vw;
+        }
+
+        h2 {
+            font-size: 10vw;
+        }
+
+        h3 {
+            font-size: 6vw;
+        }
+
+        p {
+            font-size: 5vw;
+        }
+
+        a {
+            font-size: 3vw;
+        }
+
+
+
+
+
+    }

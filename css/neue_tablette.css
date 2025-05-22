@@ -1,0 +1,21 @@
+.container_medi_neu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 100%;
+    background-color: #FE7593;
+    border-radius: 8vw;
+    padding: 10vw;
+}
+
+.input_name {
+    font-family: "workSans";
+    width: 70%;
+    background-color: #FE7593;
+    color: black;
+    font-size: 4vw;
+    text-align: left;
+    border-style: none;
+
+}

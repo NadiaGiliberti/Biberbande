@@ -3,12 +3,12 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 #boobie {
     position: absolute;
-    width: 90%;
+    width: 50%;
     z-index: -1;
 }
 
@@ -22,7 +22,7 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-    margin-top: 25vw;
+    margin-top: 20vw;
 }
 
 .medikament {
@@ -58,7 +58,7 @@
 
 .uhrzeit {
     color: black;
-    font-size: 15vw;
+    font-size: 8vw;
     font-family: sans-serif;
     text-align: center;
 
@@ -74,6 +74,26 @@
 /*** Handy  ***/
 @media screen and (max-width: 576px) {
 
+.container_wrapper {
+    margin-top: 10%;
+}
+
+#boobie {
+    width: 90%;
+}
+
+.container_medikamente {
+    margin-top: 25vw;
+}
+
+.uhrzeit_feld {
+    width: 70%;
+}
+
+.uhrzeit {
+    font-size: 15vw;
+
+}
 
 
 
