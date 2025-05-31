@@ -47,6 +47,10 @@
         background-color: #F8D6E7;
     }
 
+    main{
+        padding-bottom: 20vh;
+    }
+
     h1 {
         font-family: 'workSans';
         font-weight: 500;
@@ -115,61 +119,63 @@
 
     /* NAVIGATION UNTEN - SLIDER/TOGGLE*/
 
+
+    footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999; /* sicherstellen, dass es über dem Inhalt liegt */
+
+    }
+
     .footer-toggle {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 4vw 0;
+        padding: 1vw;
     }
 
     .toggle-switch {
         position: relative;
-        width: 50vw;
-        max-width: 300px;
-        height: 14vw;
-        max-height: 70px;
-        background-color: #EB3D01;
-        border-radius: 100px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0;
+        width: 70%;
+        background-color: #EB3D01;
+        border-radius: 8vw;
+        padding: 1vw;
         cursor: pointer;
         overflow: hidden;
     }
 
     .toggle-option {
-        width: 50%;
-        height: 100%;
+
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 20%;
         z-index: 2;
     }
 
     .toggle-option img {
-        width: 50%;
+        width: 30%;
         height: auto;
     }
 
     .toggle-slider {
         position: absolute;
-        width: 50%;
+        width: 30%;
         height: 100%;
         background-color: #F8D6E7;
-        border-radius: 100px;
-        top: 0;
-        left: 0;
+        border-radius: 8vw;
         transition: left 0.3s ease-in-out;
         z-index: 1;
     }
 
 
     /*** kleiner PC / Tablet ***/
-    @media screen and (max-width: 768px) and (min-width: 577px) {
-
-
-    }
+    @media screen and (max-width: 768px) and (min-width: 577px) {}
 
     /*** Handy  ***/
     @media screen and (max-width: 576px) {

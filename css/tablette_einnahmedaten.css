@@ -1,0 +1,155 @@
+body {
+    background-color: #C1D201;
+}
+
+h3 {
+    color: #EAFF00;
+}
+
+.text_schwarz {
+    color: #000000;
+}
+
+h4 {
+    font-family: 'workSans';
+    font-weight: 400;
+    font-size: 5vw;
+    text-transform: uppercase;
+    color: #000000;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+p {
+    color: #000000;
+}
+
+label {
+    font-family: 'workSans';
+    font-weight: 900;
+    font-size: 3vw;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+
+
+/* Wochentage Auswahl */
+
+
+.hidden {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.container_intervall {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 8vw;
+    background-color: #666D22;
+}
+
+.container_intervall input[type="time"],
+.container_intervall input[type="number"] {
+    background-color: #EAFF00;
+    border: none;
+    border-radius: 8vw;
+    margin: 5%;
+    padding: 4%;
+    font-size: 5vw;
+    font-family: 'workSans';
+    font-weight: bold;
+    width: 70%;
+    text-align: center;
+}
+
+
+.rhythmus_auswahl {
+    display: flex;
+    flex-direction: column;
+    background-color: #EAFF00;
+    border-radius: 8vw;
+    padding: 10%;
+}
+
+.rhythmus_auswahl label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+    margin-top: 5%;
+}
+
+.rhythmus_auswahl input[type="radio"] {
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #666D22;
+    position: relative;
+}
+
+.rhythmus_auswahl input[type="radio"]:checked {
+    background-color: #666D22;
+    border: 7px solid black;
+}
+
+
+#wochentage_auswahl {
+    display: flex;
+    flex-direction: column;
+    background: #666D22;
+    border-radius: 8vw;
+    padding: 10%;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.4s ease-in-out;
+    pointer-events: none;
+}
+
+#wochentage_auswahl.show {
+  max-height: 1000px; /* oder: max-content (aber ohne Transition) */
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+#wochentage_auswahl label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+    margin-top: 5%;
+}
+
+#wochentage_auswahl input[type="checkbox"] {
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #EAFF00;
+    position: relative;
+}
+
+#wochentage_auswahl input[type="checkbox"]:checked {
+    background-color: #EAFF00;
+    border: 7px solid black;
+}
+
+
+#abschliessen_button {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+}

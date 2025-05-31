@@ -9,27 +9,6 @@ const heute = new Date();
     document.getElementById('tag').textContent = tag;
 
 
-// Uhrzeit Medikamenteneinnahme laden
-function ladeUhrzeit() {
-  fetch('get_data.php')
-    .then(response => response.json())
-    .then(data => {
-      document.getElementById('uhrzeit-feld').innerText = data.uhrzeit;
-    })
-    .catch(error => {
-      console.error('Fehler beim Laden der Daten:', error);
-    });
-}
-
-// Sofort beim Laden abrufen
-window.onload = () => {
-  ladeUhrzeit();
-
-  // Alle 5 Sekunden neu laden (5000 ms)
-  setInterval(ladeUhrzeit, 5000);
-};
-
-
 ///////////////// abfrage Datenbank
 
 fetch('https://beavertime.nadiagiliberti.ch/etl/unload.php') // Pfad zur PHP-Datei anpassen

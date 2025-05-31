@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applikation Beavertime</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tablette_einnahmedaten.css">
+    <link rel="icon" href="images/icon.png" type="image/png">
+
+</head>
+
+<body>
+    <header class="container_header">
+        <div>
+            <a href="tabletten.html" class="exit"><img src="images/kreuz.png" alt="icon_kreuz"></a>
+        </div>
+        <div class="container_logo">
+            <a href="index.html"><img src="images/logo.png" alt="beavertime" class="logo"></a>
+        </div>
+    </header>
+    <main>
+
+        <h4 id="anzeigeName"></h4>
+        <div class="container_intervall">
+            <h3>Uhrzeit</h3>
+            <input type="time" id="uhrzeit" value="12:00">
+
+            <h3>Anzahl</h3>
+            <input type="number" id="anzahl" value="1" min="1">
+        </div>
+
+        <div class="rhythmus_auswahl">
+            <label><input type="radio" name="rhythmus" value="täglich" checked> Täglich</label>
+            <label><input type="radio" name="rhythmus" value="wöchentlich"> Wöchentlich</label>
+        </div>
+
+        <div id="wochentage_auswahl" class="hidden">
+            <label><input type="checkbox" value="Montag"> Montag</label>
+            <label><input type="checkbox" value="Dienstag"> Dienstag</label>
+            <label><input type="checkbox" value="Mittwoch"> Mittwoch</label>
+            <label><input type="checkbox" value="Donnerstag"> Donnerstag</label>
+            <label><input type="checkbox" value="Freitag"> Freitag</label>
+            <label><input type="checkbox" value="Samstag"> Samstag</label>
+            <label><input type="checkbox" value="Sonntag"> Sonntag</label>
+        </div>
+
+        <button id="abschliessen_button">Abschliessen</button>
+
+
+
+
+    </main>
+    <footer>
+
+
+    </footer>
+    <script src="js/tablette_einnahmedaten.js"></script>
+
+
+</body>
+
+</html>
