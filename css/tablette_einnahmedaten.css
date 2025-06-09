@@ -144,12 +144,11 @@ label {
 
 
 #abschliessen_button {
-    background-color: black;
-    color: white;
-    font-weight: bold;
-    border: none;
-    padding: 15px 30px;
-    border-radius: 20px;
-    margin-top: 30px;
-    cursor: pointer;
+    background-color: #666D22;
+    color: #EAFF00;
+}
+
+#abschliessen_button:hover {
+    background-color: #EAFF00;
+    color: #666D22;
 }
