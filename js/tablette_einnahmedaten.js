@@ -36,11 +36,31 @@ abschliessenBtn.addEventListener("click", () => {
     }
 
     const daten = {
+        name,
         uhrzeit,
         anzahl,
         rhythmus,
         wochentage
     };
 
-    console.log("Gespeicherte Daten:", daten);
+    fetch('etl/load_user.php', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(daten)
+})
+.then(response => response.json())
+.then(data => {
+    if (data.success) {
+        // Erfolgreich gespeichert -> Weiterleitung MIT Medikamentenname
+        window.location.href = `tabletten_bearbeiten.html?name=${encodeURIComponent(name)}`;
+    } else {
+        alert("Fehler beim Speichern: " + data.message);
+    }
+})
+.catch(error => {
+    console.error("Fehler beim Senden der Daten:", error);
+    alert("Technischer Fehler beim Speichern.");
+});
 });

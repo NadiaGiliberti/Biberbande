@@ -3,3 +3,55 @@
     justify-content: center;
 }
 
+.error_message {
+    display: flex;
+    justify-content: center;
+    font-family: 'workSans';
+    font-weight: 400;
+    font-size: 2.5vw;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    width: 80%;
+    margin-top: 1vw;
+    text-align: center;
+}
+
+.container_tabletten {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4vw;
+    padding: 10vw;
+    margin-top: 5vh;
+}
+
+.tablette_kachel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FE7593;
+    color: white;
+    font-family: 'workSans';
+    font-size: 4vw;
+    margin: 2vw auto;
+    padding: 3vw 4vw;
+    border-radius: 4vw;
+    width: 80%;
+    box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.2);
+}
+
+.tablette_titel {
+    flex: 1;
+    text-transform: uppercase;
+}
+
+.icon_container {
+    display: flex;
+    gap: 2vw;
+}
+
+.icon {
+    width: 6vw;
+    height: auto;
+    cursor: pointer;
+}
