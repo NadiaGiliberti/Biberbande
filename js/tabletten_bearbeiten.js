@@ -10,18 +10,20 @@ document.addEventListener("DOMContentLoaded", () => {
     if (titelElement && name) {
         titelElement.textContent = decodeURIComponent(name);
 
-       fetch(`etl/unload.php?action=medikament_details&name=${encodeURIComponent(name)}`)
+        fetch(`etl/unload.php?action=medikament_details&name=${encodeURIComponent(name)}`)
             .then(res => res.json())
             .then(data => {
                 if (data.success && Object.keys(data.data).length > 0) {
                     let counter = 1;
                     for (const [intervallId, einnahmen] of Object.entries(data.data)) {
+                        const currentDisplayNumber = counter;
+
                         const kachel = document.createElement("div");
                         kachel.classList.add("interval_kachel");
 
                         // Titel z.B. "Einnahmeintervall 1"
                         const title = document.createElement("h4");
-                        title.textContent = `Einnahmeintervall ${intervallId}`;
+                        title.textContent = `Einnahmeintervall ${currentDisplayNumber}`;
                         title.classList.add("intervall_title");
 
                         // Icon-Container
@@ -30,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                         // Bearbeiten-Icon
                         const editIcon = document.createElement("img");
-                        editIcon.src = "images/bearbeiten_schwarz.png"; // Stelle sicher, dass diese Datei vorhanden ist
+                        editIcon.src = "images/bearbeiten_schwarz.png";
                         editIcon.classList.add("icon");
                         editIcon.addEventListener("click", () => {
                             window.location.href = `tablette_einnahmedaten_bearbeiten.html?name=${encodeURIComponent(name)}&intervall_id=${intervallId}`;
@@ -41,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         deleteIcon.src = "images/loeschen_schwarz.png";
                         deleteIcon.classList.add("icon");
                         deleteIcon.addEventListener("click", () => {
-                            if (confirm(`Einnahmeintervall ${counter - 1} wirklich löschen?`)) {
+                            if (confirm(`Einnahmeintervall ${currentDisplayNumber} wirklich löschen?`)) {
                                 fetch(`etl/delete_einnahmen.php?intervall_id=${intervallId}`)
                                     .then(res => res.json())
                                     .then(resp => {
@@ -65,6 +67,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
                         kachel.appendChild(headerRow);
                         container.appendChild(kachel);
+
+                        counter++; // Zähler erhöhen
                     }
                 } else {
                     container.textContent = "Keine Einnahmeintervalle vorhanden.";
