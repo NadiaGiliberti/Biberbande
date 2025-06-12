@@ -45,11 +45,18 @@
 
     body {
         background-color: #F8D6E7;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    main {
+    .container_main {
+        width: 80%;
         padding-bottom: 20vh;
     }
+
 
     h1 {
         font-family: 'workSans';
@@ -134,36 +141,31 @@
     .container_header {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
-        width: 100%;
+        width: 80%;
         margin-top: 5vw;
         margin-bottom: 5vw;
     }
 
-    .container_logo {
-        align-self: center;
+    .container_navigation {
+        display: flex;
+        gap: 3vw;
+        /* Abstand nur zwischen den Links, kein äußerer Rand */
     }
+
 
     .logo {
         width: 10vw;
     }
 
-    .navigation {
-        gap: 10vw;
-    }
+    /* NAVIGATION UNTEN - SLIDER/TOGGLE - ANGEPASSTE HÖHE */
 
-    /* NAVIGATION UNTEN - SLIDER/TOGGLE*/
-
-
-    footer {
+    .container_footer {
         position: fixed;
         bottom: 0;
-        left: 0;
-        width: 100%;
+        width: 80%;
         z-index: 999;
-        /* sicherstellen, dass es über dem Inhalt liegt */
-
     }
 
     .footer-toggle {
@@ -178,38 +180,82 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 70%;
+        width: 100%;
+        height: 8vw;
+        /* Feste Höhe hinzugefügt - anpassbar je nach Bedarf */
         background-color: #EB3D01;
-        border-radius: 8vw;
-        padding: 1vw;
+        border-radius: 4vw;
+        /* Angepasst zur Höhe */
+        padding: 0.5vw;
+        /* Reduziertes Padding */
         cursor: pointer;
         overflow: hidden;
     }
 
     .toggle-option {
-
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 20%;
+        width: 50%;
+        height: 100%;
         z-index: 2;
+        position: relative;
+    }
+
+    /* Spezielle Positionierung für die Icons */
+    .toggle-option.home-option {
+        justify-content: flex-start;
+        padding-left: 15%;
+        /* Icon bei 15% = Mitte des Sliders bei 0-30% */
+    }
+
+    .toggle-option.pill-option {
+        justify-content: flex-end;
+        padding-right: 15%;
+        /* Icon bei 85% = Mitte des Sliders bei 70-100% */
     }
 
     .toggle-option img {
-        width: 30%;
-        height: auto;
+        width: auto;
+        height: 60%;
+        /* Feste Höhe basierend auf Container */
+        max-width: 60%;
+        /* Verhindert zu breite Icons */
+        object-fit: contain;
+        /* Verhindert Verzerrung */
     }
 
     .toggle-slider {
         position: absolute;
         width: 30%;
-        height: 100%;
+        /* Kleinerer Slider wie gewünscht */
+        height: calc(100% - 1vw);
         background-color: #F8D6E7;
-        border-radius: 8vw;
+        border-radius: 4vw;
         transition: left 0.3s ease-in-out;
         z-index: 1;
+        top: 0.5vw;
+        left: 0%;
+        /* Startet bei 0% - wird durch JavaScript gesetzt */
     }
 
+    /* Responsive Anpassungen für Handy */
+    @media screen and (max-width: 576px) {
+        .toggle-switch {
+            height: 12vw;
+            border-radius: 6vw;
+        }
+
+        .toggle-slider {
+            width: 30%;
+            /* Auch auf Handy 30% */
+            height: calc(100% - 1.5vw);
+            border-radius: 6vw;
+            top: 0.75vw;
+            left: 0%;
+            /* Startet bei 0% - wird durch JavaScript gesetzt */
+        }
+    }
 
     /*** kleiner PC / Tablet ***/
     @media screen and (max-width: 768px) and (min-width: 577px) {}
