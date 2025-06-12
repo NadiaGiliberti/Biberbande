@@ -6,7 +6,9 @@
     align-items: center;
     top: 30vh;
     height: 60vh;
-    width: 100%;
+    width: 100vw; /* 100% der Viewport-Breite */
+    left: 50%; /* Container zur Mitte verschieben */
+    transform: translateX(-50%); /* Dann um die Hälfte zurück für echte Zentrierung */
     background-color: #FE7593;
     border-radius: 8vw 8vw 0 0;
     padding: 10vw;
@@ -23,7 +25,6 @@
     font-size: 4vw;
     text-align: left;
     border-style: none;
-
 }
 
 /* Fehlernachricht */

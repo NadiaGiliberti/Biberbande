@@ -57,8 +57,11 @@ document.addEventListener("DOMContentLoaded", () => {
                         iconContainer.appendChild(bearbeitenIcon);
                         iconContainer.appendChild(loeschenIcon);
 
-                        kachel.appendChild(titel);
-                        kachel.appendChild(iconContainer);
+                        const contentContainer = document.createElement("div");
+                        contentContainer.classList.add("tablette_content");
+                        contentContainer.appendChild(titel);
+                        contentContainer.appendChild(iconContainer);
+                        kachel.appendChild(contentContainer);
                         container.appendChild(kachel);
                     });
                 } else {

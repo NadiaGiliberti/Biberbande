@@ -1,44 +1,86 @@
+.container_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    position: relative;
+}
+
 .container_hinzufügen {
     display: flex;
     justify-content: center;
+    z-index: 10;
+    position: relative;
 }
 
 .error_message {
     display: flex;
     justify-content: center;
+    align-items: center;
     font-family: 'workSans';
     font-weight: 400;
     font-size: 2.5vw;
     text-transform: uppercase;
     color: rgb(255, 255, 255);
-    width: 80%;
+    width: 70%;
     margin-top: 1vw;
     text-align: center;
+    z-index: 10;
+    position: relative;
 }
 
 .container_tabletten {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 4vw;
-    padding: 10vw;
-    margin-top: 5vh;
+    width: 100%;
+    position: absolute;
+    top: 15vh; /* Adjust based on your header height */
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
-.tablette_kachel {
+    .tablette_kachel {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #FE7593;
+    justify-content: center;  /* Center the content container */
+    align-items: flex-start;
     color: white;
     font-family: 'workSans';
     font-size: 4vw;
-    margin: 2vw auto;
-    padding: 3vw 4vw;
-    border-radius: 4vw;
-    width: 80%;
+    padding: 3vw 0;  /* Remove horizontal padding */
+    border-radius: 4vw 4vw 0 0; /* Only top corners rounded */
+    width: 100vw;
     box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.2);
+    position: absolute;
+    bottom: 0; /* Extend to bottom of screen */
+    z-index: 1;
 }
+
+/* Content container to limit width to 80% */
+.tablette_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    padding: 0 4vw;
+}
+
+/* First medication card (background card) */
+.tablette_kachel:first-child {
+    background-color: #EB3D01; /* Orange color */
+    height: 70vh; /* Takes up most of the screen */
+    z-index: 1;
+}
+
+/* Second medication card (foreground card) */
+.tablette_kachel:nth-child(2) {
+    background-color: #FE7593; /* Pink color */
+    height: 50vh; /* Smaller height, appears on top */
+    z-index: 2;
+}
+
 
 .tablette_titel {
     flex: 1;
@@ -54,4 +96,10 @@
     width: 6vw;
     height: auto;
     cursor: pointer;
+}
+
+/* Ensure footer stays on top */
+.container_footer {
+    position: fixed;
+    z-index: 1000; /* Higher than the 999 in style.css to ensure it's always on top */
 }

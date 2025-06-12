@@ -4,7 +4,7 @@ document.getElementById("weiter_button").addEventListener("click", function () {
     const name = nameField.value.trim();
 
     if (name === "") {
-        errorMessage.textContent = "Bitte gib den Namen der Tablette ein.";
+        errorMessage.textContent = "Bitte Tablettennamen eingeben.";
         nameField.classList.add("input_error");
         nameField.focus();
         return;
