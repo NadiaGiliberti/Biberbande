@@ -11,7 +11,7 @@ const heute = new Date();
 
 ///////////////// abfrage Datenbank
 
-fetch('https://beavertime.nadiagiliberti.ch/etl/unload.php') // Pfad zur PHP-Datei anpassen
+fetch('etl/unload.php?action=aktive_medikamente')
   .then(response => response.json())
   .then(data => {
     const container = document.getElementById('medikamentContainer');

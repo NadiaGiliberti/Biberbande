@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // ✅ Medikamente laden und Kacheln erzeugen
     if (container) {
-        fetch("etl/unload_tabletten.php")
+        fetch('etl/unload.php?action=alle_medikamente')
             .then(response => response.json())
             .then(data => {
                 if (data.success) {

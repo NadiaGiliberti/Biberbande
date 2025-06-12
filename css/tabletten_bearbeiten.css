@@ -7,3 +7,39 @@ h4 {
     padding-bottom: 5%;
     text-align: center;
 }
+.interval_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vw;
+    padding: 5vw;
+}
+
+.interval_kachel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FE7593;
+    color: white;
+    font-family: 'workSans';
+    font-size: 4vw;
+    padding: 3vw 4vw;
+    border-radius: 4vw;
+    width: 80%;
+    box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.2);
+}
+
+.interval_text {
+    flex: 1;
+}
+
+.icon_container {
+    display: flex;
+    gap: 2vw;
+}
+
+.icon {
+    width: 6vw;
+    height: auto;
+    cursor: pointer;
+}
