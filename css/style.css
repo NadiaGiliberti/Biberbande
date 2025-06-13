@@ -156,7 +156,7 @@
 
 
     .logo {
-        width: 10vw;
+        width: 5vw;
     }
 
     /* NAVIGATION UNTEN - SLIDER/TOGGLE - ANGEPASSTE HÖHE */
@@ -296,4 +296,7 @@
         .footer-toggle {
             display: flex;
         }
+
+
+
     }
