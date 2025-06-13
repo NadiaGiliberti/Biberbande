@@ -39,7 +39,7 @@ h4 {
     font-family: 'workSans';
     font-size: 4vw;
     padding: 3vw 0; /* Remove horizontal padding since we'll handle it in content */
-    border-radius: 4vw 4vw 0 0; /* Only top corners rounded */
+    border-radius: 8vw 8vw 0 0; /* Only top corners rounded */
     width: 100vw;
     box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.2);
     position: absolute;
@@ -74,7 +74,7 @@ h4 {
 .interval_kachel:nth-child(n+3) {
     position: relative;
     margin-top: 4vw;
-    border-radius: 4vw;
+    border-radius: 8vw;
     height: auto;
     bottom: auto;
     z-index: 3;

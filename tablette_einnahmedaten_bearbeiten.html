@@ -23,20 +23,28 @@
     <main class="container_main">
 
         <h4 id="anzeigeName"></h4>
-        <div class="container_intervall">
+        
+        <!-- Farbkachel 1: Intervall -->
+        <div class="container_intervall fullwidth-box">
             <h3>Uhrzeit</h3>
-            <input type="time" id="uhrzeit" value="12:00">
+            <div class="intervall_inner">
+                <input type="time" id="uhrzeit" value="12:00">
+            </div>
 
             <h3>Anzahl</h3>
-            <input type="number" id="anzahl" value="1" min="1">
+            <div class="intervall_inner">
+                <input type="number" id="anzahl" value="1" min="1">
+            </div>
         </div>
 
-        <div class="rhythmus_auswahl">
+        <!-- Farbkachel 2: Rhythmus-Auswahl -->
+        <div class="rhythmus_auswahl fullwidth-box">
             <label><input type="radio" name="rhythmus" value="täglich" checked> Täglich</label>
             <label><input type="radio" name="rhythmus" value="wöchentlich"> Wöchentlich</label>
         </div>
 
-        <div id="wochentage_auswahl" class="hidden">
+        <!-- Farbkachel 3: Wochentage -->
+        <div id="wochentage_auswahl" class="hidden fullwidth-box">
             <label><input type="checkbox" value="Montag"> Montag</label>
             <label><input type="checkbox" value="Dienstag"> Dienstag</label>
             <label><input type="checkbox" value="Mittwoch"> Mittwoch</label>

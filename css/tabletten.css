@@ -50,7 +50,7 @@
     font-family: 'workSans';
     font-size: 4vw;
     padding: 3vw 0;  /* Remove horizontal padding */
-    border-radius: 4vw 4vw 0 0; /* Only top corners rounded */
+    border-radius: 8vw 8vw 0 0; /* Only top corners rounded */
     width: 100vw;
     box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.2);
     position: absolute;

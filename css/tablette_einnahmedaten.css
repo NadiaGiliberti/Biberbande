@@ -49,7 +49,7 @@ label {
     align-items: center;
     justify-content: center;
     width: 100%;
-    border-radius: 8vw;
+    border-radius: 8vw 8vw 0 0;
     background-color: #666D22;
     padding-top: 6vw;
     padding-bottom: 15vw;
@@ -120,10 +120,14 @@ label {
 }
 
 #wochentage_auswahl.show {
-    max-height: 1000px; /* oder: max-content (aber ohne Transition) */
+    max-height: 1000px;
+    /* oder: max-content (aber ohne Transition) */
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto;
+
+    margin-bottom: 0;
+    padding-bottom: 25vw;
 }
 
 #wochentage_auswahl label {
@@ -157,4 +161,23 @@ label {
 #abschliessen_button:hover {
     background-color: #EAFF00;
     color: #666D22;
+}
+
+/*DAS HIER IST DAMIT DIE KACHELN AN DEN BILDSCHIRMRAND GEHEN*/
+
+.fullwidth-box {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    box-sizing: border-box;
+}
+
+.intervall_inner {
+    width: 80%;
+}
+
+.container_intervall .intervall_inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3vw auto;
 }
