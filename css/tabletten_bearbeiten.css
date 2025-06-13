@@ -6,31 +6,96 @@ h4 {
     color: #000000;
     padding-bottom: 5%;
     text-align: center;
+    z-index: 10;
+    position: relative;
 }
+
+.container_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    position: relative;
+}
+
 .interval_container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3vw;
-    padding: 5vw;
+    width: 100%;
+    position: absolute;
+    top: 20vh; /* Adjust based on your header height */
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .interval_kachel {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #FE7593;
+    justify-content: center; /* Center the content container */
+    align-items: flex-start; /* Align items to top */
     color: white;
     font-family: 'workSans';
     font-size: 4vw;
-    padding: 3vw 4vw;
-    border-radius: 4vw;
-    width: 80%;
+    padding: 3vw 0; /* Remove horizontal padding since we'll handle it in content */
+    border-radius: 4vw 4vw 0 0; /* Only top corners rounded */
+    width: 100vw;
     box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.2);
+    position: absolute;
+    bottom: 0; /* Extend to bottom of screen */
+    z-index: 1;
 }
 
-.interval_text {
+/* Content container to limit width to 80% */
+.interval_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    padding: 0 4vw; /* Add the padding here instead */
+}
+
+/* First interval card (background card) */
+.interval_kachel:first-child {
+    background-color: #EB3D01; /* Orange color */
+    height: 70vh; /* Takes up most of the screen */
+    z-index: 1;
+}
+
+/* Second interval card (foreground card) */
+.interval_kachel:nth-child(2) {
+    background-color: #FE7593; /* Pink color */
+    height: 50vh; /* Smaller height, appears on top */
+    z-index: 2;
+}
+
+/* Additional cards if needed */
+.interval_kachel:nth-child(n+3) {
+    position: relative;
+    margin-top: 4vw;
+    border-radius: 4vw;
+    height: auto;
+    bottom: auto;
+    z-index: 3;
+    background-color: #FE7593; /* Default pink for additional cards */
+}
+
+.kachel_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.intervall_title {
     flex: 1;
+    text-transform: uppercase;
+    font-family: 'workSans';
+    font-weight: 400;
+    font-size: 4vw;
+    color: white;
+    margin: 0;
 }
 
 .icon_container {
@@ -42,4 +107,19 @@ h4 {
     width: 6vw;
     height: auto;
     cursor: pointer;
+}
+
+/* Ensure button stays visible */
+.container_button {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Ensure footer stays on top */
+.container_footer {
+    position: fixed;
+    z-index: 1000;
 }

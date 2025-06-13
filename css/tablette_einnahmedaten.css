@@ -51,38 +51,44 @@ label {
     width: 100%;
     border-radius: 8vw;
     background-color: #666D22;
+    padding-top: 6vw;
+    padding-bottom: 15vw;
+    margin-bottom: -10vw;
 }
+
 
 .container_intervall input[type="time"],
 .container_intervall input[type="number"] {
     background-color: #EAFF00;
     border: none;
     border-radius: 8vw;
-    margin: 5%;
-    padding: 4%;
+    margin: 3vw 0;
     font-size: 5vw;
     font-family: 'workSans';
     font-weight: bold;
-    width: 70%;
+    width: 100%;
     text-align: center;
 }
-
 
 .rhythmus_auswahl {
     display: flex;
     flex-direction: column;
     background-color: #EAFF00;
     border-radius: 8vw;
-    padding: 10%;
+    padding: 10vw;
+    padding-bottom: 15vw;
+    margin-bottom: -10vw;
 }
 
 .rhythmus_auswahl label {
     display: flex;
     align-items: center;
     cursor: pointer;
-    gap: 10px;
+    gap: 3vw;
     margin-top: 5%;
 }
+
+/* Checkbuttons für Auswahl */
 
 .rhythmus_auswahl input[type="radio"] {
     appearance: none;
@@ -98,13 +104,13 @@ label {
     border: 7px solid black;
 }
 
-
+/*Wochentage */
 #wochentage_auswahl {
     display: flex;
     flex-direction: column;
     background: #666D22;
     border-radius: 8vw;
-    padding: 10%;
+    padding: 10vw;
     max-height: 0;
     overflow: hidden;
     opacity: 0;
@@ -114,7 +120,7 @@ label {
 }
 
 #wochentage_auswahl.show {
-  max-height: 1000px; /* oder: max-content (aber ohne Transition) */
+    max-height: 1000px; /* oder: max-content (aber ohne Transition) */
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto;
@@ -124,7 +130,7 @@ label {
     display: flex;
     align-items: center;
     cursor: pointer;
-    gap: 10px;
+    gap: 3vw;
     margin-top: 5%;
 }
 

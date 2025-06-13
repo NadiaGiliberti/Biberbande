@@ -3,9 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const name = params.get("name");
 
     const titelElement = document.getElementById("bearbeitenName");
-    const container = document.createElement("div");
-    container.classList.add("interval_container");
-    document.body.querySelector("main").appendChild(container);
+    const container = document.querySelector(".interval_container");
 
     if (titelElement && name) {
         titelElement.textContent = decodeURIComponent(name);
@@ -59,13 +57,18 @@ document.addEventListener("DOMContentLoaded", () => {
                         iconContainer.appendChild(editIcon);
                         iconContainer.appendChild(deleteIcon);
 
-                        // Titel und Icons nebeneinander
+                        // Titel und Icons nebeneinander in einem Content-Container
                         const headerRow = document.createElement("div");
                         headerRow.classList.add("kachel_header");
                         headerRow.appendChild(title);
                         headerRow.appendChild(iconContainer);
 
-                        kachel.appendChild(headerRow);
+                        // Content-Container erstellen (wie bei tabletten.js)
+                        const contentContainer = document.createElement("div");
+                        contentContainer.classList.add("interval_content");
+                        contentContainer.appendChild(headerRow);
+
+                        kachel.appendChild(contentContainer);
                         container.appendChild(kachel);
 
                         counter++; // Zähler erhöhen
