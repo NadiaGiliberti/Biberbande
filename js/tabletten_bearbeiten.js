@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                         // Titel z.B. "Einnahmeintervall 1"
                         const title = document.createElement("h4");
-                        title.textContent = `Einnahmeintervall ${currentDisplayNumber}`;
+                        title.textContent = `Intervall ${currentDisplayNumber}`;
                         title.classList.add("intervall_title");
 
                         // Icon-Container
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                         // Bearbeiten-Icon
                         const editIcon = document.createElement("img");
-                        editIcon.src = "images/bearbeiten_schwarz.png";
+                        editIcon.src = "images/bearbeiten_rosa.png";
                         editIcon.classList.add("icon");
                         editIcon.addEventListener("click", () => {
                             window.location.href = `tablette_einnahmedaten_bearbeiten.html?name=${encodeURIComponent(name)}&intervall_id=${intervallId}`;
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                         // Löschen-Icon
                         const deleteIcon = document.createElement("img");
-                        deleteIcon.src = "images/loeschen_schwarz.png";
+                        deleteIcon.src = "images/loeschen_rosa.png";
                         deleteIcon.classList.add("icon");
                         deleteIcon.addEventListener("click", () => {
                             if (confirm(`Einnahmeintervall ${currentDisplayNumber} wirklich löschen?`)) {

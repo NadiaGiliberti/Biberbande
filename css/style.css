@@ -169,7 +169,7 @@
     }
 
     .footer-toggle {
-        display: flex;
+        display: none;
         justify-content: center;
         align-items: center;
         padding: 1vw;
@@ -241,24 +241,28 @@
 
     /* Responsive Anpassungen für Handy */
     @media screen and (max-width: 576px) {
-        .toggle-switch {
-            height: 12vw;
-            border-radius: 6vw;
+
+        .container_navigation {
+            display: none;
         }
 
-        .toggle-slider {
-            width: 30%;
-            /* Auch auf Handy 30% */
-            height: calc(100% - 1.5vw);
-            border-radius: 6vw;
-            top: 0.75vw;
-            left: 0%;
-            /* Startet bei 0% - wird durch JavaScript gesetzt */
-        }
     }
 
     /*** kleiner PC / Tablet ***/
-    @media screen and (max-width: 768px) and (min-width: 577px) {}
+    @media screen and (max-width: 768px) and (min-width: 577px) {
+
+        /*NAVIGATION AUSBLENDEN*/
+        .container_navigation {
+            display: none;
+        }
+
+        /*SLIDER EINBLENDEN*/
+        .footer-toggle {
+            display: flex;
+        }
+
+
+    }
 
     /*** Handy  ***/
     @media screen and (max-width: 576px) {
@@ -283,8 +287,13 @@
             font-size: 3vw;
         }
 
+        /*NAVIGATION AUSBLENDEN*/
+        .container_navigation {
+            display: none;
+        }
 
-
-
-
+        /*SLIDER EINBLENDEN*/
+        .footer-toggle {
+            display: flex;
+        }
     }

@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                         // 🛠️ Bearbeiten
                         const bearbeitenIcon = document.createElement("img");
-                        bearbeitenIcon.src = "images/bearbeiten_schwarz.png";
+                        bearbeitenIcon.src = "images/bearbeiten_rosa.png";
                         bearbeitenIcon.alt = "Bearbeiten";
                         bearbeitenIcon.classList.add("icon");
                         bearbeitenIcon.addEventListener("click", () => {
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                         // ❌ Löschen
                         const loeschenIcon = document.createElement("img");
-                        loeschenIcon.src = "images/loeschen_schwarz.png";
+                        loeschenIcon.src = "images/loeschen_rosa.png";
                         loeschenIcon.alt = "Löschen";
                         loeschenIcon.classList.add("icon");
                         loeschenIcon.addEventListener("click", () => {
