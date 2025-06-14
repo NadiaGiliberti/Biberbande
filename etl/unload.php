@@ -1,4 +1,6 @@
 <?php
+
+// Ladet die  Medikamentenverwaltung und Einnahmedaten von der DB
 require_once("db_config.php");
 header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');

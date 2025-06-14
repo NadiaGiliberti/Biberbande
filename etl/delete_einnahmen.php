@@ -1,4 +1,6 @@
 <?php
+
+// Delete Einnahmedaten by Intervall ID
 require_once("db_config.php");
 header('Content-Type: application/json');
 

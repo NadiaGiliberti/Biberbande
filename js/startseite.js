@@ -1,3 +1,5 @@
+// Javascript für die html seite index.html
+
 // Aktuelles Datum oben anzeigen
 const heute = new Date();
 const monat = heute.toLocaleDateString('de-DE', { month: 'long' });

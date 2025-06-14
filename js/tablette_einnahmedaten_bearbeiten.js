@@ -1,3 +1,5 @@
+// Javascript für die html seite tablette_einnahmedaten_bearbeiten.html
+
 const params = new URLSearchParams(window.location.search);
 const name = params.get("name");
 const intervall_id = params.get("intervall_id");

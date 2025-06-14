@@ -1,3 +1,5 @@
+// Javascript für die html seite tabletten.html (startseite slider rechts)
+
 document.addEventListener("DOMContentLoaded", () => {
     const container = document.getElementById("tablettenListe");
     const errorMessage = document.getElementById("error_message");

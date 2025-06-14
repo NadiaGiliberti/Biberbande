@@ -1,3 +1,5 @@
+// Javascript für die html seite neue_tablette.html
+
 document.getElementById("weiter_button").addEventListener("click", function () {
     const nameField = document.getElementById("name_tablette");
     const errorMessage = document.getElementById("error_message");

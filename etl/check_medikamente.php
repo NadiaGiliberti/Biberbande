@@ -1,4 +1,6 @@
 <?php
+
+// DIESE DATEI IST FÜR DIE ETL-PRÜFUNG DER MEDIKAMENTE VORGESEHEN
 require_once 'db_config.php';
 header('Content-Type: application/json');
 

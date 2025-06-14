@@ -1,4 +1,6 @@
 <?php
+
+// Delete Medikament und zusammengehörige Einnahmedaten
 header('Content-Type: application/json');
 require_once 'db_config.php';
 

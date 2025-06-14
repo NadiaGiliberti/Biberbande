@@ -1,6 +1,6 @@
 <?php
 /*************************************************************
- * Erweitertes load.php
+ * Erweitertes load.php hier ist alles drin fürs Laden von Arduino/ESP 32C6
  * Kombiniert alle Funktionen:
  * 1. Sensor-Logging vom ESP32 (Original-Funktion)
  * 2. Medikamenten-Updates vom ESP32 (Smart System) 

@@ -1,4 +1,6 @@
 <?php
+
+// Update Einnahmedaten für ein Intervall
 header('Content-Type: application/json');
 require_once 'db_config.php';
 

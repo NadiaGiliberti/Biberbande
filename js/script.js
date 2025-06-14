@@ -1,3 +1,5 @@
+// Javascript für alle  html seiten (footer Slider)
+
 document.addEventListener('DOMContentLoaded', function () {
     const slider = document.getElementById('slider');
     const toggle = document.getElementById('pageToggle');

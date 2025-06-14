@@ -1,4 +1,5 @@
 <?php
+// Speichern von Medikamenten daten eingegeben vom user auf website
 header('Content-Type: application/json');
 require_once 'db_config.php';
 
