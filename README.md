@@ -55,7 +55,8 @@ Sobald das Medikament und die erste Einnahme erfasst sind, kann man über die Se
 ---
 
 ## Screenshots
-<img src="images/figma_reihe" alt="figma_reihe" width="30%" />
+![Figma Reihe](images/figma_reihe.jpg)
+
 
 
 **GIF Figma animiert (einfügen)**
