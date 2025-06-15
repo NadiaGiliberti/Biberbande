@@ -221,7 +221,7 @@ Sie kamen bei der Erstellung von Dokumentation, der Programmierung sowie beim De
 Die Boxen wurden mit dem **3D-Drucker** hergestellt.
 Die Boxen wurden separat gedruckt, da sie sonst zu gross für den Drucker gewesen wären.
 
-<p align="center">
+<p align="left">
   <img src="images/prototyp_vorne.jpeg" alt="Prototyp vorne" width="30%" />
   <img src="images/prototyp_hinten.jpeg" alt="Prototyp hinten" width="30%" />
   <img src="images/protoyp_fertig.jpeg" alt="Prototyp fertig" width="30%" />
