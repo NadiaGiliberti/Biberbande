@@ -80,7 +80,8 @@ Hier werden die Uhrzeit der Einnahme, die Anzahl der Tabletten pro Einnahme sowi
 ## Screenshots
 ![Figma Reihe](images/figma_reihe.jpg)
 Hier der Link zum GIF (muss heruntergeladen werden)
-[Link zum GIF](https://fhgraubuenden-my.sharepoint.com/personal/gilibernadia_fhgr_ch/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fgilibernadia%5Ffhgr%5Fch%2FDocuments%2F4%2E%20Semester%2FInteraktive%20Medien%2FBiberbande%2FDokumentation%2FVideo%2FOrder%20Video%20für%20Dokumentation&ga=1)
+![Figma GIF](images/figma_gif.gif)
+
 
 **Link Figma:**
 [https://www.figma.com/design/TGLskOnKCRHrxdOJ6txQv4/Biberbande?node-id=0-1\&t=177QyXOKYJXFGXNV-1](https://www.figma.com/design/TGLskOnKCRHrxdOJ6txQv4/Biberbande?node-id=0-1&t=177QyXOKYJXFGXNV-1)
