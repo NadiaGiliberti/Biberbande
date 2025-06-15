@@ -245,8 +245,8 @@ COMMIT;
 
 ## Steckschema
 <p float="left">
-  <img src="images/steckplan_eins.png" alt="Steckplan Eins" width="45%" />
-  <img src="images/steckplan_zwei.png" alt="Steckplan Zwei" width="45%" />
+  <img src="images/steckplan_eins.jpeg" alt="Steckplan Eins" width="45%" />
+  <img src="images/steckplan_zwei.jpeg" alt="Steckplan Zwei" width="45%" />
 </p>
 
 
