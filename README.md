@@ -56,6 +56,8 @@ Sobald das Medikament und die erste Einnahme erfasst sind, kann man über die Se
 
 ## Screenshots
 ![Figma Reihe](images/figma_reihe.jpg)
+Hier der Link zum GIF (muss heruntergeladen werden)
+[Link-Text](https://fhgraubuenden-my.sharepoint.com/personal/gilibernadia_fhgr_ch/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fgilibernadia%5Ffhgr%5Fch%2FDocuments%2F4%2E%20Semester%2FInteraktive%20Medien%2FBiberbande%2FDokumentation%2FVideo%2FOrder%20Video%20für%20Dokumentation&ga=1)
 
 
 
