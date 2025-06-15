@@ -219,13 +219,9 @@ Sie kamen bei der Erstellung von Dokumentation, der Programmierung sowie beim De
 ## Prototyp
 
 Die Boxen wurden mit dem **3D-Drucker** hergestellt.
-Da die Noppen der Steckplatine zu weit nach aussen kamen, mussten wir diese **abschleifen**.
 Die Boxen wurden separat gedruckt, da sie sonst zu gross für den Drucker gewesen wären.
 
-**Grafik 138333099**, Bild
-**Grafik 616189562**, Bild
-**Grafik 1627806426**, Bild
+![Prototyp fertig](image/prototyp_fertig.jpeg)
 
----
 
-Wenn du möchtest, kann ich dir auch helfen, eine automatische Inhaltsübersicht (`[TOC]`) oder GitHub-kompatible Absprung-Links einzubauen. Sag einfach Bescheid!
+
