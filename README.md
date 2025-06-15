@@ -55,9 +55,8 @@ Sobald das Medikament und die erste Einnahme erfasst sind, kann man über die Se
 ---
 
 ## Screenshots
+<img src="images/figma_reihe" alt="figma_reihe" width="30%" />
 
-Ein Bild, das Handy, Text, tragbares Kommunikationsgerät, mobiles Gerät enthält.
-**KI-generierte Inhalte können fehlerhaft sein.**, Bild
 
 **GIF Figma animiert (einfügen)**
 
