@@ -57,11 +57,7 @@ Sobald das Medikament und die erste Einnahme erfasst sind, kann man über die Se
 ## Screenshots
 ![Figma Reihe](images/figma_reihe.jpg)
 Hier der Link zum GIF (muss heruntergeladen werden)
-[Link-Text](https://fhgraubuenden-my.sharepoint.com/personal/gilibernadia_fhgr_ch/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fgilibernadia%5Ffhgr%5Fch%2FDocuments%2F4%2E%20Semester%2FInteraktive%20Medien%2FBiberbande%2FDokumentation%2FVideo%2FOrder%20Video%20für%20Dokumentation&ga=1)
-
-
-
-**GIF Figma animiert (einfügen)**
+[Link zum GIF](https://fhgraubuenden-my.sharepoint.com/personal/gilibernadia_fhgr_ch/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fgilibernadia%5Ffhgr%5Fch%2FDocuments%2F4%2E%20Semester%2FInteraktive%20Medien%2FBiberbande%2FDokumentation%2FVideo%2FOrder%20Video%20für%20Dokumentation&ga=1)
 
 **Link Figma:**
 [https://www.figma.com/design/TGLskOnKCRHrxdOJ6txQv4/Biberbande?node-id=0-1\&t=177QyXOKYJXFGXNV-1](https://www.figma.com/design/TGLskOnKCRHrxdOJ6txQv4/Biberbande?node-id=0-1&t=177QyXOKYJXFGXNV-1)
@@ -99,20 +95,136 @@ Hier der Link zum GIF (muss heruntergeladen werden)
    * Füge den folgenden SQL-Code in das SQL-Feld ein:
 
 ```sql
--- phpMyAdmin SQL Dump 
--- version 4.9.6 
--- https://www.phpmyadmin.net/ 
--- Host: 3g119a.myd.infomaniak.com 
--- Erstellungszeit: 14. Jun 2025 um 17:19 
--- Server-Version: 10.6.19-MariaDB-deb11-log 
--- PHP-Version: 7.4.33 
+-- phpMyAdmin SQL Dump
+-- version 4.9.6
+-- https://www.phpmyadmin.net/
+--
+-- Host: 3g119a.myd.infomaniak.com
+-- Erstellungszeit: 14. Jun 2025 um 17:19
+-- Server-Version: 10.6.19-MariaDB-deb11-log
+-- PHP-Version: 7.4.33
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO"; 
-SET AUTOCOMMIT = 0; 
-START TRANSACTION; 
-SET time_zone = "+00:00"; 
-...
--- vollständiger SQL Dump hier eingefügt (aus deinem Originaltext)
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Datenbank: `3g119a_beavertime`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `einnahmedaten`
+--
+
+CREATE TABLE `einnahmedaten` (
+  `id` int(10) UNSIGNED NOT NULL COMMENT 'automatisch erstellt',
+  `id_medikamente` int(10) UNSIGNED DEFAULT NULL COMMENT 'greift auf die id in Tabelle 1 zu',
+  `wochentag` varchar(10) DEFAULT NULL,
+  `uhrzeit` time DEFAULT NULL,
+  `anzahl` int(10) UNSIGNED DEFAULT NULL COMMENT 'Anzahl Medikamente, welche auf dem oled display angezeigt werden.',
+  `einnahme_erfolgt` tinyint(1) DEFAULT NULL COMMENT 'gibt nur true oder false.',
+  `intervall_id` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
+
+--
+-- Daten für Tabelle `einnahmedaten`
+--
+
+INSERT INTO `einnahmedaten` (`id`, `id_medikamente`, `wochentag`, `uhrzeit`, `anzahl`, `einnahme_erfolgt`, `intervall_id`) VALUES
+(454, 36, 'Montag', '17:00:00', 1, 0, 2),
+(455, 36, 'Dienstag', '17:00:00', 1, 0, 2),
+(456, 36, 'Mittwoch', '17:00:00', 1, 0, 2),
+(457, 36, 'Donnerstag', '17:00:00', 1, 0, 2),
+(458, 36, 'Freitag', '17:00:00', 1, 0, 2),
+(459, 36, 'Samstag', '17:00:00', 1, 1, 2),
+(460, 36, 'Sonntag', '17:00:00', 1, 0, 2),
+(461, 34, 'Montag', '17:01:00', 3, 0, 1),
+(462, 34, 'Dienstag', '17:01:00', 3, 0, 1),
+(463, 34, 'Mittwoch', '17:01:00', 3, 0, 1),
+(464, 34, 'Donnerstag', '17:01:00', 3, 0, 1),
+(465, 34, 'Freitag', '17:01:00', 3, 0, 1),
+(466, 34, 'Samstag', '17:01:00', 3, 1, 1),
+(467, 34, 'Sonntag', '17:01:00', 3, 0, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `medikamente`
+--
+
+CREATE TABLE `medikamente` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `medikamente` varchar(20) NOT NULL,
+  `start_date` date DEFAULT NULL,
+  `end_daten` date DEFAULT NULL,
+  `status` tinyint(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
+
+--
+-- Daten für Tabelle `medikamente`
+--
+
+INSERT INTO `medikamente` (`id`, `medikamente`, `start_date`, `end_daten`, `status`) VALUES
+(34, 'Eisentablette', '2025-06-13', NULL, 1),
+(36, 'Dafalgan', '2025-06-14', NULL, 1);
+
+--
+-- Indizes der exportierten Tabellen
+--
+
+--
+-- Indizes für die Tabelle `einnahmedaten`
+--
+ALTER TABLE `einnahmedaten`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `id_medikamente` (`id_medikamente`);
+
+--
+-- Indizes für die Tabelle `medikamente`
+--
+ALTER TABLE `medikamente`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT für exportierte Tabellen
+--
+
+--
+-- AUTO_INCREMENT für Tabelle `einnahmedaten`
+--
+ALTER TABLE `einnahmedaten`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'automatisch erstellt', AUTO_INCREMENT=468;
+
+--
+-- AUTO_INCREMENT für Tabelle `medikamente`
+--
+ALTER TABLE `medikamente`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
+
+--
+-- Constraints der exportierten Tabellen
+--
+
+--
+-- Constraints der Tabelle `einnahmedaten`
+--
+ALTER TABLE `einnahmedaten`
+  ADD CONSTRAINT `einnahmedaten_ibfk_1` FOREIGN KEY (`id_medikamente`) REFERENCES `medikamente` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
 ```
 
 7. Link zum GitHub-Repository:
