@@ -60,27 +60,20 @@ Das Logo ist ein Biber mit einer Pillenkelle.
 
 ## Designkonzept
 
-Für das Design haben wir uns bewusst für eine schlichte und klar strukturierte Benutzeroberfläche entschieden. Besonders wichtig war uns dabei die Nutzerfreundlichkeit für Personen über 50 Jahre. Klare Navigation, gut lesbare Schriftgrössen und eine intuitive Bedienung standen im Fokus.
+Für das Design haben wir uns bewusst für eine schlichte und klar strukturierte Benutzeroberfläche entschieden. Besonders wichtig war uns dabei die Nutzerfreundlichkeit für Personen über 50 Jahre. Klare Navigation, gut lesbare Schriftgrössen standen im Fokus.
 
 **Homebildschirm:**
-Der aktuelle Tag wird gross und gut erkennbar im oberen, mittigen Bereich angezeigt. Im unteren Bereich finden sich die eingetragenen Medikamente samt Einnahmezeiten. Zudem ist klar ersichtlich, wie viele Tabletten pro Einnahme eingenommen werden müssen.
+Der aktuelle Tag wird gross und gut erkennbar im oberen, mittigen Bereich angezeigt. Im unteren Bereich finden sich die heute noch fälligen eingetragenen Medikamente inkl. Einnahmezeit und Menge. 
 Ein Slider ermöglicht einen einfachen und schnellen Wechsel zwischen dem Homebildschirm und der „Bearbeitung Tabletten“-Seite.
 
 **Bearbeitung Tabletten:**
-Auf dieser Seite werden alle bereits eingetragenen Medikamente übersichtlich angezeigt. Hier kann man entscheiden, ob ein Medikament gelöscht oder die Einnahme bearbeitet werden soll.
-Über das Plussymbol lässt sich ein neues Medikament hinzufügen.
+Auf dieser Seite werden alle bereits eingetragenen Medikamente angezeigt. Hier kann man entscheiden, ob ein Medikament gelöscht oder bearbeitet werden soll. Unter bearbeiten können weitere Einnahmeintervalle hinzugefügt werden, falls ein Medikament z.B. mehrmals täglich eingenommen werden muss (morgens und abends). Über das Plussymbol lässt sich ein neues Medikament hinzufügen.
 
 **Neue Tablette:**
-Möchte man ein neues Medikament erfassen, wird man automatisch von der „Bearbeitung Tabletten“-Seite zur „Neue Tablette“-Seite weitergeleitet. Dort kann der Name des Medikaments eingetragen werden. Mit einem Klick auf „Weiter“ erscheint ein Pop-up zur weiteren Konfiguration.
+Möchte man ein neues Medikament erfassen, wird man zur „Neue Tablette“-Seite weitergeleitet. Dort kann der Name des Medikaments eingetragen werden. Mit einem Klick auf „Weiter“ geht es zur weiteren Konfiguration "Einnahmedaten".
 
-**Pop Up:**
-Im Pop-up können die Uhrzeit der Einnahme, die Anzahl der Tabletten pro Einnahme sowie die Wiederholung (täglich oder wöchentlich) eingestellt werden.
-
-**Pop Up Wochentage:**
-Wenn das Medikament nicht täglich, sondern nur an bestimmten Wochentagen eingenommen wird, kann man in diesem Pop-up gezielt die gewünschten Tage auswählen.
-
-**Bearbeitung Einnahme:**
-Sobald das Medikament und die erste Einnahme erfasst sind, kann man über die Seite „Bearbeitung Einnahme“ weitere Einnahmezeiten hinzufügen. Auch hier wird man erneut zum Pop-up weitergeleitet, um die Angaben entsprechend zu ergänzen.
+**Einnahmedaten:**
+Hier werden die Uhrzeit der Einnahme, die Anzahl der Tabletten pro Einnahme sowie die Wiederholung (täglich oder wöchentlich) eingestellt. Wenn das Medikament nicht täglich, sondern nur an bestimmten Wochentagen eingenommen werden muss, kann man beim wählen von "wöchentlich" die gewünschten Tage auswählen.
 
 ---
 
@@ -98,8 +91,8 @@ Hier der Link zum GIF (muss heruntergeladen werden)
 
 ### Für User:
 
-1. Laden Sie die App herunter *(nicht im Prototyp enthalten)*.
-2. Loggen Sie sich ein *(nicht im Prototyp enthalten)*.
+1. App herunterladen *(nicht im Prototyp enthalten)*.
+2. Einloggen *(nicht im Prototyp enthalten)*.
 3. Registrieren Sie Ihr/Ihre Medikamente auf der **Bearbeitung Tabletten** Seite, indem Sie auf das rote **Pluszeichen** drücken.
 4. Geben Sie den Namen des Medikaments ein und bestätigen Sie mit **«weiter»**.
 5. Legen Sie die **Uhrzeit** Ihrer ersten Einnahme fest.
@@ -107,21 +100,19 @@ Hier der Link zum GIF (muss heruntergeladen werden)
 7. Wählen Sie, ob die Einnahme **täglich** oder **wöchentlich** erfolgen soll. Falls Sie **wöchentlich** wählen, bestimmen Sie die gewünschten **Wochentage**. Bestätigen Sie anschliessend mit **«Abschliessen»**.
 8. Nun haben Sie die Möglichkeit, **weitere Einnahmen** für dasselbe Medikament zu erfassen.
 9. Wenn Sie fertig sind, kehren Sie mit dem roten **«X»** in der oberen linken Ecke zurück zum **Homebildschirm**.
-10. Auf dem **Homebildschirm** sehen Sie nun, welche Medikamente **am aktuellen Tag** eingenommen werden müssen – inklusive **Uhrzeit** und **Anzahl Tabletten**.
+10. Auf dem **Homebildschirm** sehen Sie nun, welche Medikamente **am aktuellen Tag** noch eingenommen werden müssen – inklusive **Uhrzeit** und **Anzahl Tabletten**.
 
 ### Für Entwickler:
 
 1. Stecke das **Steckschema** nach *(siehe Bild unten)*.
 2. Lade den Arduino Code auf deinen **Microcontrollerboard** hoch.
 
-   > Wichtig: WLAN Code anpassen nicht vergessen!
-3. Hier der Code:
+   > Wichtig: WLAN Code anpassen und verbindungen zu den URL's falls eigene Webpage!
+3. Hier der Code unter mc:
    [https://github.com/NadiaGiliberti/Biberbande.git](https://github.com/NadiaGiliberti/Biberbande.git)
 4. Achte darauf, dass das Board unter `Tools → Board` ausgewählt ist und der richtige **Port** verwendet wird.
 5. Setze alle **HTML**, **CSS**, **JS** und **PHP**-Dateien auf. Siehe GitHub.
-6. Erstelle die Datenbank:
-
-   * Öffne **phpMyAdmin**
+6. Erstelle die Datenbank und öffne **phpMyAdmin**:
    * Füge den folgenden SQL-Code in das SQL-Feld ein:
 
 ```sql
@@ -257,7 +248,28 @@ COMMIT;
 
 ```
 
-7. Link zum GitHub-Repository:
+7. Erstelle ein `db_config.php` und fülle die Felder für `db_host`, `db_name`, `db_user` und `db_pass` aus:
+
+    ```php
+    <?php
+    // Database configuration for ETL scripts
+    $db_host = "EIGENER HOST";  
+    $db_name = "EIGENER NAME";         
+    $db_user = "EIGENER USER";              
+    $db_pass = "EIGENES PASSWORT";            
+
+    $db_charset = "utf8";
+
+    $dsn = "mysql:host=$db_host;dbname=$db_name;charset=$db_charset";
+    $options = [
+        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+        PDO::ATTR_EMULATE_PREPARES => false,
+    ];
+    ?>
+    ```
+
+8. Link zum GitHub-Repository für allfällige Checks:
    [https://github.com/NadiaGiliberti/Biberbande.git](https://github.com/NadiaGiliberti/Biberbande.git)
 
 ---
@@ -286,7 +298,7 @@ COMMIT;
 
 ### Entwicklungsprozess
 
-Nachdem wir unsere Idee entwickelt haben und unser Design stand, machten wir uns mit der Steckplatine vertraut.
+Nachdem wir unsere Idee entwickelt haben und unser Design stand, machten wir uns mit der Steckplatine und dem Microkontrollerboard vertraut.
 Wir fanden im GitHub Repository von **Jan Fiess** hilfreiche Anleitungen. Hier kombinierten wir unterschiedliche Steckschema-Vorgaben miteinander. Bei Fragen half uns **ChatGPT** oder die **Dozenten**.
 
 ### Verworfene Lösungsansätze, Fehlschläge und Umplanungen
@@ -297,8 +309,7 @@ So riet uns auch unser Dozent, zwei Dinge wegzulassen. Also beschränkten wir un
 
 ### Challenges
 
-Eine grosse Challenge war das Verbinden der Datenbank mit der Webseite, sowie mit den Daten, die der **Distanzsensor** an die Datenbank schickt.
-Anfangs war uns schleierhaft, welche Files dafür überhaupt nötig sind.
+Eine grosse Challenge war das Verbinden der Datenbank mit der Webseite, sowie mit den Daten, die der **Distanzsensor** an die Datenbank schickt. Anfangs war uns schleierhaft, welche Files dafür überhaupt nötig sind.
 Mit Hilfe von **Folien**, **Google** und **KI** tasteten wir uns schrittweise zur Lösung vor.
 
 ### Lerneffekt
@@ -310,7 +321,7 @@ Die Programmiersprache **C++** hatten wir vorher auch noch nicht gekannt.
 
 ### Known Bugs
 
-Die Sensoren reagieren nicht immer reibungslos.
+Die Sensoren reagieren leider nicht immer reibungslos. 
 Manchmal hören sie nicht auf zu piepsen und manchmal reagieren sie vorzeitig.
 
 **Ansonsten nichts. Unser Projekt ist perfekt!** 💅
@@ -325,13 +336,13 @@ Allerdings war es anschliessend eine Herausforderung, zwei Distanzsensoren zu ko
 
 **Jan** hat uns hier netterweise geholfen und den passenden Arduino Code zur Verfügung gestellt.
 Leider konnten wir diesen am Schluss nicht verwenden, da es zu viele Kabel für einen Mikrokontroller gewesen wäre.
-So entschieden wir uns, mit zwei identischen Steckschemen zu arbeiten.
+So entschieden wir uns, mit zwei identischen Steckschemen zu arbeiten und zwei leicht unterschiedliche Arduino Codes für Gerät 1 und Gerät 2 zu entwerfen.
 
 Beim Anschliessen des **LED-Rings** und des **Piepser** stiessen wir auf weitere Herausforderungen.
-Einmal funktionierte es – und am nächsten Tag schon wieder nicht.
+Einmal funktionierte es und am nächsten Tag schon wieder nicht.
 Es war mühsam, herauszufinden, ob der Fehler im **Code** lag oder ein **Bauteil defekt** war.
 
-Gleichzeitig setzten wir das **Frontend (HTML und CSS)** sowie die **Datenbank** auf.
+Gleichzeitig setzten wir das **Frontend (HTML und CSS)** sowie die **Datenbank** und die **Javascripte** auf.
 Dann begannen wir mit der Verknüpfung zwischen Webseite und Datenbank.
 
 Im letzten Schritt sendeten wir die Daten des **Distanzsensors** an die **Datenbank** und schliesslich an die **Webseite**.
@@ -351,7 +362,7 @@ Im letzten Schritt sendeten wir die Daten des **Distanzsensors** an die **Datenb
 ## Hilfsmittel
 
 Dieses Projekt wurde mit Unterstützung von **KI-Tools** wie **ChatGPT** und **GitHub Copilot** realisiert.
-Sie kamen bei der Erstellung von Dokumentation, der Programmierung sowie beim Debugging zum Einsatz und haben den Entwicklungsprozess massgeblich erleichtert.
+Sie kamen bei der Erstellung von Dokumentation, der Programmierung sowie beim Debugging zum Einsatz und haben den Entwicklungsprozess massgeblich erleichtert. Natürlich haben uns unsere Dozierenden auch tatkräftig während den Unterrichtstagen unterstützt. 
 
 ---
 
@@ -364,14 +375,10 @@ Sie kamen bei der Erstellung von Dokumentation, der Programmierung sowie beim De
 ## Prototyp
 
 Die Boxen wurden mit dem **3D-Drucker** hergestellt.
-Die Boxen wurden separat gedruckt, da sie sonst zu gross für den Drucker gewesen wären.
+Die Boxen wurden separat pro Gerät gedruckt, da sie sonst zu gross für den Drucker gewesen wären.
 
-<p align="left">
-  <img src="images/prototyp_vorne.jpeg" alt="Prototyp vorne" width="30%" />
-  <img src="images/prototyp_hinten.jpeg" alt="Prototyp hinten" width="30%" />
-  <img src="images/protoyp_fertig.jpeg" alt="Prototyp fertig" width="30%" />
+<p style="text-align: left;">
+  <img src="images/prototyp_vorne.jpeg" alt="Prototyp vorne" style="width:30%; display:inline-block; margin-right: 1%;" />
+  <img src="images/prototyp_hinten.jpeg" alt="Prototyp hinten" style="width:30%; display:inline-block; margin-right: 1%;" />
+  <img src="images/protoyp_fertig.jpeg" alt="Prototyp fertig" style="width:30%; display:inline-block;" />
 </p>
-
-
-
-
