@@ -79,8 +79,10 @@ Hier werden die Uhrzeit der Einnahme, die Anzahl der Tabletten pro Einnahme sowi
 
 ## Screenshots
 ![Figma Reihe](images/figma_reihe.jpg)
-Hier der Link zum GIF (muss heruntergeladen werden)
-![Figma GIF](images/figma_gif.gif)
+<p align="center">
+  <img src="images/figma_gif.gif" width="33%" alt="Figma GIF">
+</p>
+
 
 
 **Link Figma:**
