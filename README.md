@@ -15,6 +15,36 @@ Sobald eine Einnahme fällig ist, signalisiert ein LED-Ring visuell und ein laut
 
 # Inhaltsverzeichnis
 
+- [UX Dokumentation](#ux-dokumentation)
+  - [Titel](#titel)
+  - [Logo](#logo)
+- [Designkonzept](#designkonzept)
+  - [Homebildschirm](#homebildschirm)
+  - [Bearbeitung Tabletten](#bearbeitung-tabletten)
+  - [Neue Tablette](#neue-tablette)
+  - [Pop Up](#pop-up)
+  - [Pop Up Wochentage](#pop-up-wochentage)
+  - [Bearbeitung Einnahme](#bearbeitung-einnahme)
+- [Screenshots](#screenshots)
+- [Reproduzierbarkeit](#reproduzierbarkeit)
+  - [Für User](#für-user)
+  - [Für Entwickler](#für-entwickler)
+- [Flussdiagramm](#flussdiagramm)
+- [Komponentenplan](#komponentenplan)
+- [Steckschema](#steckschema)
+- [Umsetzungsprozess](#umsetzungsprozess)
+  - [Entwicklungsprozess](#entwicklungsprozess)
+  - [Verworfene Lösungsansätze, Fehlschläge und Umplanungen](#verworfene-lösungsansätze-fehlschläge-und-umplanungen)
+  - [Challenges](#challenges)
+  - [Lerneffekt](#lerneffekt)
+  - [Known Bugs](#known-bugs)
+- [Planung](#planung)
+- [Arbeitsaufteilung](#arbeitsaufteilung)
+- [Hilfsmittel](#hilfsmittel)
+- [Video Dokumentation](#video-dokumentation)
+- [Prototyp](#prototyp)
+
+
 ## UX Dokumentation
 
 ### Titel
