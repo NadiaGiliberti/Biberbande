@@ -233,9 +233,7 @@ COMMIT;
 ---
 
 ## Flussdiagramm
-
-Ein Bild, das Diagramm, Text, Plan enthält.
-**KI-generierte Inhalte können fehlerhaft sein.**, Bild
+![Flussdiagramm](images/flussdiagramm.png)
 
 **Link zum Flussdiagram:**
 [https://www.figma.com/design/TGLskOnKCRHrxdOJ6txQv4/Biberbande?node-id=47-344\&t=fM96IaxtLXgUX8Zf-1](https://www.figma.com/design/TGLskOnKCRHrxdOJ6txQv4/Biberbande?node-id=47-344&t=fM96IaxtLXgUX8Zf-1)
@@ -243,10 +241,14 @@ Ein Bild, das Diagramm, Text, Plan enthält.
 ---
 
 ## Komponentenplan
+![Komponentenplan](images/komponentenplan.png)
 
-* **Grafik 1:** BildSteckschema
-* **Grafik 839641001:** BildGrafik
-* **Grafik 858533959:** Bild
+## Steckschema
+<p float="left">
+  <img src="images/steckplan_eins.png" alt="Steckplan Eins" width="45%" />
+  <img src="images/steckplan_zwei.png" alt="Steckplan Zwei" width="45%" />
+</p>
+
 
 ---
 
@@ -313,7 +315,6 @@ Im letzten Schritt sendeten wir die Daten des **Distanzsensors** an die **Datenb
 * **Backend:** Nadia
 * **Dokumentation:** Teamarbeit
 * **Steckschema:** Teamarbeit
-* **Handwerkliches/3D-Druck:** Silvana
 
 ---
 
@@ -326,7 +327,7 @@ Sie kamen bei der Erstellung von Dokumentation, der Programmierung sowie beim De
 
 ## Video Dokumentation
 
-**Hier geht’s zum Video**
+[Link zum Video](https://fhgraubuenden-my.sharepoint.com/personal/gilibernadia_fhgr_ch/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fgilibernadia%5Ffhgr%5Fch%2FDocuments%2F4%2E%20Semester%2FInteraktive%20Medien%2FBiberbande%2FDokumentation%2FVideo%2FOrder%20Video%20für%20Dokumentation&ga=1)
 
 ---
 
