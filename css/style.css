@@ -239,14 +239,6 @@
         /* Startet bei 0% - wird durch JavaScript gesetzt */
     }
 
-    /* Responsive Anpassungen für Handy */
-    @media screen and (max-width: 576px) {
-
-        .container_navigation {
-            display: none;
-        }
-
-    }
 
     /*** kleiner PC / Tablet ***/
     @media screen and (max-width: 768px) and (min-width: 577px) {
